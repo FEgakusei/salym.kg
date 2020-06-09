@@ -28,19 +28,32 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar fixed="top" light expand="sm">
+        <Navbar className="header">
           <div className="container">
-            <NavbarBrand href="/">{this.props.siteTitle}</NavbarBrand>
+            <NavbarBrand>
+            <a className="logo" href="/">
+              <span>С</span>
+              <span>А</span>
+              <span>Л</span>
+              <span>Ы</span>
+              <span>М</span>
+            </a>
+            </NavbarBrand>
+          <div className="nav-toggle"></div>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav className="menu" navbar>
                 <NavItem>
                   <NavLink href="/index">Блог</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink href="/SecondPage">Кыргызча IT</NavLink>
                 </NavItem>
-              </Nav>
+                </Nav>
+                <Input>
+                  <FormControl type="text" placeholder="Сайттан издөө..." className="searchform" />
+                  <Button type="submit"></Button>
+                </Input>
             </Collapse>
           </div>
         </Navbar>
@@ -50,11 +63,11 @@ class Header extends React.Component {
 }
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string, // САЛЫМ
 }
 
 Header.defaultProps = {
   siteTitle: ``,
 }
-
+ 
 export default Header

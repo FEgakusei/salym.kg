@@ -6,7 +6,7 @@ import Post from '../components/Post'
 import PaginationLinks from '../components/PaginationLinks'
 
 const IndexPage = () => {
-  const postsPerPage = 2
+  const postsPerPage = 2 
   let numberOfPages
   return (
     <Layout pageTitle="САЛЫМ">
@@ -24,11 +24,9 @@ const IndexPage = () => {
                   key={node.id}
                   title={node.frontmatter.title}
                   slug={node.fields.slug}
-                  author={node.frontmatter.author}
                   body={node.excerpt}
                   date={node.frontmatter.date}
-                  fluid={node.frontmatter.image.childImageSharp.fluid}
-                  tags={node.frontmatter.tags}
+                  fluid={node.frontmatter.image.childImageSharp.fluid}                  
                 />
               ))}
               <PaginationLinks currentPage={1} numberOfPages={numberOfPages} />

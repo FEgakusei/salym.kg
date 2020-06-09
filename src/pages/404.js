@@ -4,10 +4,10 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const NotFoundPage = () => (
-  <Layout pageTitle="Oups, Somethig went wrong..">
+  <Layout pageTitle="Байланыш жок...">
     <SEO title="404: Not found" />
     <Link className="btn btn-primary text-uppercase" to={'/'}>
-      Go home
+      Башкы бетке барыӊыз
     </Link>
   </Layout>
 )

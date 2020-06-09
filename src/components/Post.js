@@ -11,7 +11,7 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { slugify } from '../util/utilityFunctions'
 
-const Post = ({ title, author, slug, date, body, fluid, tags }) => (
+const Post = ({ title, slug, date, body, fluid, tags }) => (
   <Card>
     <Link to={slug}>
       <Img className="card-image-top" fluid={fluid} />

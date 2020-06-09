@@ -1,0 +1,43 @@
+.footer-container {
+  padding: 30px 0;
+  background: #3C3D41;
+  color: #FDFCFC;
+}
+ 
+.footer-col {
+  text-align: center;
+}
+
+.footer-social-links {
+  text-align: center;
+
+  ul.social-links-list {
+    li {
+      margin-right: 25px;
+      display: inline-block;
+
+      a {
+        color: #FDFCFC;
+
+        &.instagram:hover {
+          color: #e95950;
+        }
+        &.facebook:hover {
+          color: rgb(66, 103, 178);
+        }
+        &.twitter:hover {
+          color: rgb(56, 161, 243);
+        }
+        &.google:hover {
+          color: rgb(221, 75, 57);
+        }
+        &.linkedin:hover {
+          color: rgb(0, 119, 181);
+        }
+      }
+    }
+  }
+}
+
+
+
