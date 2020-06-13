@@ -24,11 +24,9 @@ const SecondPage = () => {
                   key={node.id}
                   title={node.frontmatter.title}
                   slug={node.fields.slug}
-                  author={node.frontmatter.author}
                   body={node.excerpt}
                   date={node.frontmatter.date}
                   fluid={node.frontmatter.image.childImageSharp.fluid}
-                  tags={node.frontmatter.tags}
                 />
               ))}
               <PaginationLinks currentPage={1} numberOfPages={numberOfPages} />
@@ -53,8 +51,6 @@ const indexQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMM Do YYYY")
-            author
-            tags
             image {
               childImageSharp {
                 fluid(maxWidth: 600) {

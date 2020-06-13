@@ -9,7 +9,7 @@ import '../styles/index.scss'
 
 import { Row, Col } from 'reactstrap'
 
-const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => (
+const Layout = ({ children, pageTitle }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -34,7 +34,7 @@ const Layout = ({ authorImageFluid, children, pageTitle, postAuthor }) => (
           <Row>
             <Col md="8">{children}</Col>
             <Col md="4">
-              <Sidebar author={postAuthor} authorFluid={authorImageFluid} />
+              <Sidebar />
             </Col>
           </Row>
         </div>

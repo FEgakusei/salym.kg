@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { graphql, StaticQuery } from 'gatsby'
+import Sidebar from '../components/Sidebar.js'
 import Post from '../components/Post'
 import PaginationLinks from '../components/PaginationLinks'
 
@@ -51,7 +52,6 @@ const indexQuery = graphql`
           frontmatter {
             title
             date(formatString: "MMM Do YYYY")
-            tags
             image {
               childImageSharp {
                 fluid(maxWidth: 600) {
