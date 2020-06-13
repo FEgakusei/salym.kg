@@ -9,7 +9,7 @@ const SecondPage = () => {
   const postsPerPage = 2
   let numberOfPages
   return (
-    <Layout pageTitle="САЛЫМ">
+    <Layout pageTitle=" ">
       <SEO title="КЫРГЫЗЧА IT" keywords={[`gatsby`, `application`, `react`]} />
       <StaticQuery
         query={indexQuery}

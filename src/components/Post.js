@@ -11,6 +11,8 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { slugify } from '../util/utilityFunctions'
 
+import '../styles/posts.css'
+
 const Post = ({ title, slug, date, body, fluid, tags }) => (
   <Card>
     <Link to={slug}>
@@ -21,8 +23,7 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
         <Link to={slug}>{title}</Link>
       </CardTitle>
       <CardSubtitle>
-        <span className="text-info">{date}</span> by{' '}
-        <span className="text-info">{author}</span>
+        <span className="text-info">{date}</span>
       </CardSubtitle>
       <CardText>{body}</CardText>
       <ul className="post-tags">
@@ -37,10 +38,10 @@ const Post = ({ title, slug, date, body, fluid, tags }) => (
         ))}
       </ul>
       <Link
-        to={slug}
-        className="btn btn-outline-primary float-right text-uppercase"
+        to={path}
+        className="more-link"
       >
-        Read more
+        Уландысы бар
       </Link>
     </CardBody>
   </Card>

@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 function SEO({
-  author,
   description,
   lang,
   meta,
@@ -48,10 +47,6 @@ function SEO({
               {
                 name: 'twitter:card',
                 content: 'summary',
-              },
-              {
-                name: 'twitter:creator',
-                content: author,
               },
               {
                 name: 'twitter:title',

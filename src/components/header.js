@@ -27,7 +27,6 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div>
         <Navbar className="header">
           <div className="container">
             <NavbarBrand>
@@ -57,7 +56,6 @@ class Header extends React.Component {
             </Collapse>
           </div>
         </Navbar>
-      </div>
     )
   }
 }

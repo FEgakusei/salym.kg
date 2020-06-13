@@ -1,0 +1,25 @@
+.more-link {
+  position: relative;
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 44px;
+  padding: 0 22px;
+  background: #0E1D28;
+  letter-spacing: 0.1em;
+}
+  
+.more-link:after {
+  content:'';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border: solid transparent;
+  border-width: 22px 18px;
+  border-left-color: #0E1D28;
+  transform:translateX(100%);
+}
