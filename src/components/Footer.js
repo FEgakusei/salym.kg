@@ -3,6 +3,7 @@ import React from 'react'
 const Footer = () => (
   <div className="footer-container">
     <h4 className= "footer-col">"Салым-кж"  Коомдук Фонду © 2020</h4>
+    <a href="mailto:gulmayramsabirbekova19@gmail.com">Кат жазыӊыз</a>
     <div className="footer-social-links">
       <ul className="social-links-list">
         <li>
