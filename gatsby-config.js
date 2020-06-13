@@ -2,7 +2,7 @@
   siteMetadata: {
     title: `САЛЫМ`,
     description: `Коомго салым кошолу`,
-    author: `FEgakusey`,
+    author: `FEgakusei`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
