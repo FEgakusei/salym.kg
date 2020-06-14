@@ -9,8 +9,8 @@ const SecondPage = () => {
   const postsPerPage = 2
   let numberOfPages
   return (
-    <Layout pageTitle=" ">
-      <SEO title="КЫРГЫЗЧА IT" keywords={[`gatsby`, `application`, `react`]} />
+    <Layout pageTitle="КЫРГЫЗЧА IT">
+      <SEO title="САЛЫМ" keywords={[`gatsby`, `application`, `react`]} />
       <StaticQuery
         query={indexQuery}
         render={data => {
@@ -42,7 +42,7 @@ const indexQuery = graphql`
   query indexQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      limit: 2
+      limit: 3
     ) {
       totalCount
       edges {

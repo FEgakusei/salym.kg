@@ -25,7 +25,6 @@ const SinglePost = ({ data, pageContext, location }) => {
     >
       <SEO
         title={post.title}
-        keywords={post.tags}
         description={post.description}
         url={baseUrl}
         pathname={location.pathname}
