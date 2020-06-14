@@ -11,6 +11,8 @@ import '../styles/posts.css'
 
 const SinglePost = ({ data, pageContext, location }) => {
   const post = data.markdownRemark.frontmatter
+
+  const baseUrl = 'https://gatsbytutorial.co.uk/'
   
   const disqusShortname = 'https-gatsbytutorial-co-uk'
   const disqusConfig = {
@@ -112,7 +114,7 @@ const SinglePost = ({ data, pageContext, location }) => {
 }
 
 export const postQuery = graphql`
-  query blogPostBySlug($slug: String!, $imageUrl: String!) {
+  query blogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       html
@@ -125,13 +127,6 @@ export const postQuery = graphql`
               ...GatsbyImageSharpFluid
             }
           }
-        }
-      }
-    }
-    file(relativePath: { eq: $imageUrl }) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
         }
       }
     }

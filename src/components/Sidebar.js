@@ -3,22 +3,19 @@ import {
   Card,
   CardTitle,
   CardBody,
-  CardText,
-  CardUl,
-  CardLi,
   Form,
   FormGroup,
   Input,
 } from 'reactstrap'
 import { graphql, StaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
-import Sidebar from '../components/Sidebar.js'
+import Sidebar from '../components/Sidebar'
 
 import '../styles/Sidebar.css' 
 
 const Sidebar = ({ }) => (
   <div >
-    )}
+    )
     <Card className="widget">
       <CardTitle className="widget-title">Бөлүмдөр</CardTitle>
         <ul class="widget-category-list">
