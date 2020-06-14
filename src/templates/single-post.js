@@ -12,9 +12,9 @@ import '../styles/posts.css'
 const SinglePost = ({ data, pageContext, location }) => {
   const post = data.markdownRemark.frontmatter
 
-  const baseUrl = 'https://gatsbytutorial.co.uk/'
+  const baseUrl = 'https://salym.kg/'
   
-  const disqusShortname = 'https-gatsbytutorial-co-uk'
+  const disqusShortname = 'https-salym-kg'
   const disqusConfig = {
     identifier: data.markdownRemark.id,
     title: post.title,
