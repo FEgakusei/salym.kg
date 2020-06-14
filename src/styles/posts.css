@@ -1,3 +1,51 @@
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 15px;
+}
+
+.posts-list {
+  margin-bottom: 30px;
+  width: 64%;
+  float:left;
+}
+  
+.post {
+  margin-bottom: 35px;
+}
+  
+.post-content p {
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+  
+.post-image {
+  margin-bottom: 30px;
+}
+  
+.category {
+  margin-bottom: 15px;
+}
+  
+.category a {
+  color: #F64A46;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+  
+.post-title {
+  margin-bottom: 12px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.post-footer {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
 .more-link {
   position: relative;
   display: inline-block;
@@ -23,3 +71,4 @@
   border-left-color: #0E1D28;
   transform:translateX(100%);
 }
+
