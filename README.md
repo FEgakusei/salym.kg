@@ -1,3 +1,4 @@
+# salym.kg
 ## Guide
 
 1.  **Install dependencies**
